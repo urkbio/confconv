@@ -10,6 +10,37 @@ Configuration Converter
 - INI (.ini)
 
 ## 安装
+
+需要先安装Poetry
+
+```
+# Windows
+# powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+
+# scoop
+scoop install poetry
+
+# 或用pip
+pip install poetry
+
+# 添加到系统环境变量（PowerShell）
+$Env:Path += ";$env:APPDATA\Python\Scripts"
+```
+```
+# Linux & MacOS
+# 使用curl
+curl -sSL https://install.python-poetry.org | python3 -
+
+# 使用pip
+pip3 install poetry
+
+# 添加到环境变量（bash/zsh）
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc  # 如果使用 bash
+# 或
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc   # 如果使用 zsh
+```
+
 ```
 poetry install
 poetry build
