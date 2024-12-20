@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "confconv"
+version = "0.1.0"
+description = "多格式配置文件转换工具"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyYAML = "^6.0"
+click = "^8.0"
+toml = "^0.10.2"
+
+[tool.poetry.scripts]
+confconv = "confconv.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api" 
